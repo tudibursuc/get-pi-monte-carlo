@@ -15,7 +15,7 @@ This project approximates the number Pi using the Monte Carlo method. It consist
 - Node.js 16+ ([Download here](https://nodejs.org/))
 
 ---
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the `app/` directory:
 
@@ -53,13 +53,6 @@ The project requires pnpm ((https://pnpm.io/installation)
 pnpm install
 pnpm dev
 ```
-## 🔐 Environment Variables
-
-Create a `.env` file in the `app/` directory:
-
-```bash
-cp app/.env.example app/.env
-
 
 ### Used Resources 
 
