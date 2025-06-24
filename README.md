@@ -15,6 +15,13 @@ This project approximates the number Pi using the Monte Carlo method. It consist
 - Node.js 16+ ([Download here](https://nodejs.org/))
 
 ---
+## 🔐 Environment Variables
+
+Create a `.env` file in the `app/` directory:
+
+```
+cp app/.env.example app/.env
+```
 
 ### For Server development
 
@@ -28,7 +35,7 @@ You need to create a python virtual env using `poetry` (https://python-poetry.or
 
 ```
 poetry env use (which pyenv python)
-poetry install
+poetry install --no-root
 poetry run uvicorn server.main:app --reload
 ```
 
@@ -46,6 +53,12 @@ The project requires pnpm ((https://pnpm.io/installation)
 pnpm install
 pnpm dev
 ```
+## 🔐 Environment Variables
+
+Create a `.env` file in the `app/` directory:
+
+```bash
+cp app/.env.example app/.env
 
 
 ### Used Resources 

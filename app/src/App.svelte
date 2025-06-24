@@ -3,6 +3,7 @@ let n = 10000;
 let pi: number | null = null;
 let loading = false;
 let error = "";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 async function estimatePi() {
 	loading = true;
@@ -10,7 +11,7 @@ async function estimatePi() {
 	pi = null;
 
 	try {
-		const response = await fetch("http://localhost:8000/generate-points", {
+		const response = await fetch(`${apiUrl}/generate-points`, {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ n }),
@@ -40,7 +41,7 @@ async function estimatePi() {
   </label>
 
   <button on:click={estimatePi} disabled={loading}>
-    {loading ? 'Estimating...' : 'Estimate Pi'}
+    {loading ? "Estimating..." : "Estimate Pi"}
   </button>
 
   {#if pi !== null}

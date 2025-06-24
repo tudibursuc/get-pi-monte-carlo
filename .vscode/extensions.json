@@ -3,6 +3,6 @@
 		// "esbenp.prettier-vscode",
 		"ms-python.vscode-pylance",
 		"matangover.mypy",
-        "biomejs.biome"
+		"biomejs.biome"
 	]
 }
