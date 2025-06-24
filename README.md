@@ -20,7 +20,7 @@ This project approximates the number Pi using the Monte Carlo method. It consist
 Create a `.env` file in the `app/` directory:
 
 ```
-cp app/.env.example app/.env
+cp .env.example app/.env
 ```
 
 ### For Server development
