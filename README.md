@@ -46,3 +46,16 @@ The project requires pnpm ((https://pnpm.io/installation)
 pnpm install
 pnpm dev
 ```
+
+
+### Used Resources 
+
+`https://en.wikipedia.org/wiki/Monte_Carlo_method#Overview`
+
+`https://stackoverflow.com/`
+
+`https://chat.openai.com/`
+
+`https://www.google.com/`
+
+`Github Copilot in VSCode`
