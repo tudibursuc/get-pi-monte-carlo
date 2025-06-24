@@ -1,26 +1,29 @@
 {
-  "name": "get-pi-monte-carlo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --config app/vite.config.mjs",
-    "build": "vite build --config app/vite.config.mjs",
-    "preview": "vite preview --config app/vite.config.mjs"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.12.1",
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^5.1.0",
-    "@tsconfig/svelte": "^5.0.4",
-    "svelte": "^5.34.7",
-    "svelte-check": "^4.2.2",
-    "svelte-preprocess": "^6.0.3",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vite-plugin-checker": "^0.9.3"
-  }
+	"name": "get-pi-monte-carlo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "vite --config app/vite.config.mjs",
+		"build": "vite build --config app/vite.config.mjs",
+		"preview": "vite preview --config app/vite.config.mjs",
+		"format": "biome format . --write",
+		"lint": "biome lint ."
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.12.1",
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.5",
+		"@sveltejs/vite-plugin-svelte": "^5.1.0",
+		"@tsconfig/svelte": "^5.0.4",
+		"svelte": "^5.34.7",
+		"svelte-check": "^4.2.2",
+		"svelte-preprocess": "^6.0.3",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5",
+		"vite-plugin-checker": "^0.9.3"
+	}
 }
