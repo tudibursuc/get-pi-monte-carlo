@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import random
 
 app = FastAPI()
@@ -13,11 +14,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+class PointsRequest(BaseModel):
+    n: int
+    
 @app.get("/")
 def read_root():
     return {"message": "API is running"}
 
 @app.post("/generate-points")
-def generate_points(n: int):
-    points = [[random.random(), random.random()] for _ in range(n)]
+def generate_points(data: PointsRequest):
+    points = [[random.random(), random.random()] for _ in range(data.n)]
     return {"points": points}
