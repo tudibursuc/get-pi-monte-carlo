@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env.*
+venv/
+.env
+.venv/
+poetry.lock
+*.egg-info/
+dist/
+build/
+
+# PyCharm or IDE files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node (pnpm + frontend)
+node_modules/
+pnpm-lock.yaml
+
+# Vite build output (adjust if you change outDir)
+dist/
+
+# Svelte cache / temp
+.svelte-kit/
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+.coverage
+
+# Tests
+.pytest_cache/
+
+# dotenv files (if any)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Other
+*.swp
+*.swo
