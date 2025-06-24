@@ -34,7 +34,7 @@ pyenv install 3.13.3
 You need to create a python virtual env using `poetry` (https://python-poetry.org/)
 
 ```
-poetry env use (which pyenv python)
+poetry env use (pyenv which python)
 poetry install --no-root
 poetry run uvicorn server.main:app --reload
 ```
@@ -53,6 +53,14 @@ The project requires pnpm ((https://pnpm.io/installation)
 pnpm install
 pnpm dev
 ```
+
+### Formatting and Linting Commands
+
+```
+pnpm format 
+pnpm lint
+```
+
 
 ### Used Resources 
 
